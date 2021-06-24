@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2184055598660317115}
   - component: {fileID: 9107539205272311685}
   - component: {fileID: 2310176595256271570}
+  - component: {fileID: 9084061083433848368}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3485937002707698149}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -40.622173, y: -1.079, z: 3.5373778}
-  m_LocalScale: {x: 0.1, y: 1, z: 0.1}
+  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
   m_Children: []
   m_Father: {fileID: 7549972346154601794}
   m_RootOrder: 0
@@ -95,6 +96,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9084061083433848368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3485937002707698149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9552a15a62042f4fa3f523accfa5464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractEvent: {fileID: 11400000, guid: ca4c1babc499d0341a199ab5371ca05a, type: 2}
 --- !u!1 &3858797733907776912
 GameObject:
   m_ObjectHideFlags: 0
