@@ -1722,7 +1722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1280077450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1904,7 +1904,7 @@ MonoBehaviour:
   - {x: -0.23969145, y: 8.370985, z: -28.530693}
   - {x: -0.25684547, y: 14.150904, z: -29.528383}
   Body: {fileID: 1322763593}
-  StopWhenPathComplete: 1
+  StopWhenPathComplete: 0
   DurationOfMove: 2
 --- !u!54 &1322763593
 Rigidbody:
@@ -2452,9 +2452,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialougeText: {fileID: 1104608417}
-  DelayBetweenLetter: 0.1
+  DelayBetweenLetter: 0.02
   DialougeDoneIndecator: {fileID: 189858626}
-  playingSequence: {fileID: 0}
+  playingSequence: {fileID: 11400000, guid: c9ee2e31c239dff419f68af9971002b2, type: 2}
 --- !u!1001 &1959200422
 PrefabInstance:
   m_ObjectHideFlags: 0
