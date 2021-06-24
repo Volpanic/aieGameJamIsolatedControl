@@ -58,4 +58,9 @@ public class MovingObject : MonoBehaviour
 
         }
     }
+
+    public void FlipEnabled()
+    {
+        enabled = !enabled;
+    }
 }
