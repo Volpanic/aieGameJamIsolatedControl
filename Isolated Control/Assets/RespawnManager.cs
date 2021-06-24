@@ -31,6 +31,7 @@ public class RespawnManager : MonoBehaviour
                 transform.position = targetPoint;
                 transform.rotation = targetRot;
                 if (controller != null) controller.enabled = true;
+                FadeController.FadeIn();
             }
         }
     }
@@ -43,7 +44,8 @@ public class RespawnManager : MonoBehaviour
 
     public void Respawn()
     {
-        Debug.Log("g");
+        if (Respawning) return;
+
         if(FadeController == null)
         {
             if (controller != null) controller.enabled = false;
