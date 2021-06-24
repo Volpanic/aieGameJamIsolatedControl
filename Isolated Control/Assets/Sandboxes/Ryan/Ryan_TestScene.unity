@@ -944,6 +944,34 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &896833614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6641319737621120121, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+  m_PrefabInstance: {fileID: 6641319736900983863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &896833616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896833614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 270aa5ce880f35d4ca1b867490f30734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPuzzleComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectsToCheckActive:
+  - {fileID: 8691427493701457465}
+  - {fileID: 7859058153079626788}
+  - {fileID: 2796833131650016198}
+  - {fileID: 6902194582872516705}
+  - {fileID: 2622671727555509011}
+  - {fileID: 6711717909480921965}
+  - {fileID: 566984615228344132}
 --- !u!1 &1034045875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2637,6 +2665,21 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &566984615228344132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6626167920609860467, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+  m_PrefabInstance: {fileID: 6641319736900983863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2622671727555509011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8669199585264133924, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+  m_PrefabInstance: {fileID: 6641319736900983863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2796833131650016198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8861656862753095665, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+  m_PrefabInstance: {fileID: 6641319736900983863}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6186236202646521438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2765,6 +2808,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: LightPuzzleDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 896833616}
+    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: VertifyPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.2418753
@@ -2813,5 +2884,193 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightPuzzle
       objectReference: {fileID: 0}
+    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LightPuzzleDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 896833616}
+    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: VertifyPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LightPuzzleDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 896833616}
+    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: VertifyPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: LightPuzzleDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 896833616}
+    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: VertifyPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: LightPuzzleDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 896833616}
+    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: VertifyPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: LightPuzzleDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 896833616}
+    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: VertifyPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LightPuzzleDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 896833616}
+    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: VertifyPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+--- !u!1 &6711717909480921965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 76133474766604122, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+  m_PrefabInstance: {fileID: 6641319736900983863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6902194582872516705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 280120903838987350, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+  m_PrefabInstance: {fileID: 6641319736900983863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7859058153079626788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3547234368788676627, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+  m_PrefabInstance: {fileID: 6641319736900983863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8691427493701457465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2644899807908694542, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+  m_PrefabInstance: {fileID: 6641319736900983863}
+  m_PrefabAsset: {fileID: 0}

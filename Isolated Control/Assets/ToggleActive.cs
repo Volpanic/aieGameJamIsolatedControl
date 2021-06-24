@@ -6,7 +6,6 @@ public class ToggleActive : MonoBehaviour
 {
     public void ToggleSelfActive()
     {
-        Debug.Log("YO");
         if (gameObject.activeInHierarchy) gameObject.SetActive(false);
         else gameObject.SetActive(true);
     }
