@@ -6,10 +6,13 @@ using UnityEngine.Events;
 public class Interactable : MonoBehaviour
 {
     public UnityEvent OnInteract;
-
+    public GameEvent InteractEvent;
     public void InteractedWith()
     {
-        if(enabled)
-        OnInteract.Invoke();
+        if (enabled)
+        {
+            OnInteract.Invoke();
+            if(InteractEvent != null) InteractEvent.Raise();
+        }
     }
 }

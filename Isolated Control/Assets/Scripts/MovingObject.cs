@@ -8,6 +8,7 @@ public class MovingObject : MonoBehaviour
 {
     public List<Vector3> WayPoints = new List<Vector3>();
     public Rigidbody Body;
+    public bool StopWhenPathComplete = false;
 
     [Min(0)]
     public float DurationOfMove = 2;
@@ -47,6 +48,11 @@ public class MovingObject : MonoBehaviour
             {
                 //Change Point Dir
                 pointDir = -pointDir;
+                
+                if(StopWhenPathComplete)
+                {
+                    enabled = false;
+                }
             }
             pointLerpPosition = 0;
 

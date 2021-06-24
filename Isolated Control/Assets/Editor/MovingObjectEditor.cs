@@ -32,6 +32,8 @@ public class MovingObjectEditor : Editor
         obj.Update();
 
         EditorGUILayout.PropertyField(obj.FindProperty("Body"));
+        EditorGUILayout.PropertyField(obj.FindProperty("DurationOfMove"));
+        EditorGUILayout.PropertyField(obj.FindProperty("StopWhenPathComplete"));
         EditorGUILayout.PropertyField(obj.FindProperty("WayPoints"));
 
         if (GUILayout.Button("Add Point"))
