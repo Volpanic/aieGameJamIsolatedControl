@@ -28,6 +28,16 @@ public class PowerManager : MonoBehaviour
         }
     }
 
+    public void CyclePower()
+    {
+        activePowerRing++;
+        if(activePowerRing >= PowerRings.Count)
+        {
+            activePowerRing = 0;
+        }
+
+        PowerRingActive = activePowerRing;
+    }
 
     private void UpdatePowerRing(int value)
     {
