@@ -411,7 +411,7 @@ MonoBehaviour:
   canDoubleJump: 0
   doubleJump: 0
   groundCheck: {fileID: 254165912}
-  groundDistance: 0.4
+  groundDistance: 0.3
   groundMask:
     serializedVersion: 2
     m_Bits: 256
@@ -486,7 +486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204671071}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.049, y: 0.47, z: 1.612}
+  m_LocalPosition: {x: 2.049, y: 1.23, z: 1.612}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1739689953}
@@ -1616,7 +1616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayPoints:
-  - {x: 2.9127913, y: -3.71, z: -13.34566}
+  - {x: 2.9127913, y: -3.71, z: -10.77}
   - {x: 0, y: 7.452436, z: -14.590071}
   Body: {fileID: 1322763593}
   DurationOfMove: 2
@@ -1923,7 +1923,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322763591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9127913, y: -3.71, z: -13.34566}
+  m_LocalPosition: {x: 2.9127913, y: -3.71, z: -10.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2236,6 +2236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6431f9615c85c7849bd4f2baa7161413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ArmReach: 5
 --- !u!1 &2003208172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,3 +2758,60 @@ PrefabInstance:
       objectReference: {fileID: 1689271147}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 029fff281b859704b86637fafc81f772, type: 3}
+--- !u!1001 &6641319736900983863
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2418753
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.45876
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.37884
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641319737621120121, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
+      propertyPath: m_Name
+      value: LightPuzzle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}

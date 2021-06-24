@@ -6,6 +6,9 @@ public class InteractionChecker : MonoBehaviour
 {
     Camera cam;
 
+    [Tooltip("The distance of the raycast.")]
+    public float ArmReach = 5;
+
     private void Start()
     {
         cam = Camera.main;
@@ -20,7 +23,7 @@ public class InteractionChecker : MonoBehaviour
             Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             RaycastHit hit;
 
-            if(Physics.Raycast(ray,out hit))
+            if(Physics.Raycast(ray,out hit, ArmReach))
             {
                 hit.collider.gameObject.BroadcastMessage("InteractedWith",SendMessageOptions.DontRequireReceiver);
             }
