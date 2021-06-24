@@ -11,7 +11,7 @@ public class FPS_Player_Movement : MonoBehaviour
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
 
-    public bool canDoubleJump;
+    public bool canDoubleJump = false;
     public bool doubleJump;
 
     public Transform groundCheck;
@@ -21,7 +21,7 @@ public class FPS_Player_Movement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-    private float jumpGrace = 0f;
+    public float jumpGrace = 0f;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -33,7 +33,7 @@ public class FPS_Player_Movement : MonoBehaviour
         if (cols != null && cols.Length > 0 && cols[0] != null)
         {
             isGrounded = true;
-            jumpGrace = 0.2f;
+            jumpGrace = 0.1f;
 
             //Moving Platform Stuff
             if (cols[0].attachedRigidbody != null)
