@@ -21,11 +21,27 @@ public class FPS_Player_Movement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    private float jumpGrace = 0f;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        jumpGrace -= Time.fixedDeltaTime;
+        Collider[] cols = new Collider[1];
+        cols = Physics.OverlapSphere(groundCheck.position, groundDistance, groundMask);
+
+        if (cols != null && cols.Length > 0 && cols[0] != null)
+        {
+            isGrounded = true;
+            jumpGrace = 0.2f;
+
+            //Moving Platform Stuff
+            if (cols[0].attachedRigidbody != null)
+            {
+                controller.Move(cols[0].attachedRigidbody.velocity * Time.fixedDeltaTime);
+            }
+        }
+        else isGrounded = false;
 
         if(isGrounded && velocity.y < 0)
         {
@@ -39,9 +55,16 @@ public class FPS_Player_Movement : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
 
-        controller.Move(move * speed * Time.deltaTime);
+        controller.Move(move * speed * Time.fixedDeltaTime);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        velocity.y += gravity * Time.fixedDeltaTime;
+
+        controller.Move(velocity * Time.fixedDeltaTime);
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Jump") && (isGrounded || jumpGrace > 0))
         {
             Jump();
         }
@@ -51,18 +74,14 @@ public class FPS_Player_Movement : MonoBehaviour
             Jump();
             doubleJump = false;
         }
-
-        velocity.y += gravity * Time.deltaTime;
-
-        controller.Move(velocity * Time.deltaTime);
-
-        void Jump()
-        {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-        }
-
-
     }
+
+    void Jump()
+    {
+        velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        jumpGrace = 0;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "DoubleJumpEnable")
