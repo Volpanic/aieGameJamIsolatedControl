@@ -353,147 +353,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &204671071
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 204671077}
-  - component: {fileID: 204671076}
-  - component: {fileID: 204671075}
-  - component: {fileID: 204671074}
-  - component: {fileID: 204671073}
-  - component: {fileID: 204671072}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!143 &204671072
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204671071}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &204671073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204671071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 893b3fa96ad7dd74b969c7494cc4dfdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 204671072}
-  speed: 12
-  gravity: -19.62
-  jumpHeight: 3
-  canDoubleJump: 0
-  doubleJump: 0
-  groundCheck: {fileID: 254165912}
-  groundDistance: 0.3
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!136 &204671074
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204671071}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &204671075
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204671071}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &204671076
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204671071}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &204671077
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204671071}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.049, y: 1.23, z: 1.612}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1739689953}
-  - {fileID: 254165912}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &209615422
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,36 +445,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 119.46, y: -30, z: 0}
---- !u!1 &254165911
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 254165912}
-  m_Layer: 0
-  m_Name: GroundCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &254165912
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254165911}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 204671077}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &380262151
 Mesh:
   m_ObjectHideFlags: 0
@@ -944,34 +773,63 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &896833614 stripped
+--- !u!1 &874344372
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6641319737621120121, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-  m_PrefabInstance: {fileID: 6641319736900983863}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &896833616
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 874344375}
+  - component: {fileID: 874344374}
+  - component: {fileID: 874344373}
+  m_Layer: 9
+  m_Name: DeathBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &874344373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 896833614}
+  m_GameObject: {fileID: 874344372}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 270aa5ce880f35d4ca1b867490f30734, type: 3}
+  m_Script: {fileID: 11500000, guid: f38ce3183d7aec046bc37b5b0f4222d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnPuzzleComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  ObjectsToCheckActive:
-  - {fileID: 8691427493701457465}
-  - {fileID: 7859058153079626788}
-  - {fileID: 2796833131650016198}
-  - {fileID: 6902194582872516705}
-  - {fileID: 2622671727555509011}
-  - {fileID: 6711717909480921965}
-  - {fileID: 566984615228344132}
+--- !u!65 &874344374
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874344372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &874344375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874344372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.19, z: 7.67}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034045875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,150 +1979,27 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1739689952
-GameObject:
+--- !u!1001 &1959200422
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1739689953}
-  - component: {fileID: 1739689957}
-  - component: {fileID: 1739689956}
-  - component: {fileID: 1739689955}
-  - component: {fileID: 1739689954}
-  - component: {fileID: 1739689958}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1739689953
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739689952}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.839, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 204671077}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1739689954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739689952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d3895dfe7a6be4aa0fcb926f8cb314, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 1000
-  playerBody: {fileID: 204671077}
---- !u!114 &1739689955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739689952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
---- !u!81 &1739689956
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739689952}
-  m_Enabled: 1
---- !u!20 &1739689957
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739689952}
-  m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!114 &1739689958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739689952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6431f9615c85c7849bd4f2baa7161413, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ArmReach: 5
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 986118660002362465, guid: a9cab6dc981c5b74dbb9a5b396c06484, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986118660002362465, guid: a9cab6dc981c5b74dbb9a5b396c06484, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 986118660002362466, guid: a9cab6dc981c5b74dbb9a5b396c06484, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a9cab6dc981c5b74dbb9a5b396c06484, type: 3}
 --- !u!1 &2003208172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,21 +2400,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &566984615228344132 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6626167920609860467, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-  m_PrefabInstance: {fileID: 6641319736900983863}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2622671727555509011 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8669199585264133924, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-  m_PrefabInstance: {fileID: 6641319736900983863}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2796833131650016198 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8861656862753095665, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-  m_PrefabInstance: {fileID: 6641319736900983863}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6186236202646521438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2808,34 +2528,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: LightPuzzleDetection, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 896833616}
-    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: VertifyPuzzle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319737001247082, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6641319737621120120, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.2418753
@@ -2884,193 +2576,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightPuzzle
       objectReference: {fileID: 0}
-    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: LightPuzzleDetection, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 896833616}
-    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: VertifyPuzzle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319737969737441, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: LightPuzzleDetection, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 896833616}
-    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: VertifyPuzzle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738358939838, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: LightPuzzleDetection, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 896833616}
-    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: VertifyPuzzle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738397233706, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: LightPuzzleDetection, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 896833616}
-    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: VertifyPuzzle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738437041909, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: LightPuzzleDetection, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 896833616}
-    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: VertifyPuzzle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738487042077, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: LightPuzzleDetection, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 896833616}
-    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: VertifyPuzzle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641319738739376748, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
---- !u!1 &6711717909480921965 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 76133474766604122, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-  m_PrefabInstance: {fileID: 6641319736900983863}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6902194582872516705 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 280120903838987350, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-  m_PrefabInstance: {fileID: 6641319736900983863}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7859058153079626788 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3547234368788676627, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-  m_PrefabInstance: {fileID: 6641319736900983863}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8691427493701457465 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2644899807908694542, guid: c78285e81a32a5b47ad6bf577d0d1083, type: 3}
-  m_PrefabInstance: {fileID: 6641319736900983863}
-  m_PrefabAsset: {fileID: 0}
