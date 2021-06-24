@@ -13,6 +13,5 @@ public class AddGameObjectRuntimeSet : MonoBehaviour
     private void OnDisable()
     {
         gameObjectRuntimeSet.RemoveFromList(gameObject);
-
     }
 }
