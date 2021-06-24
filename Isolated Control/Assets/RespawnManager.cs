@@ -32,6 +32,7 @@ public class RespawnManager : MonoBehaviour
                 transform.rotation = targetRot;
                 if (controller != null) controller.enabled = true;
                 FadeController.FadeIn();
+                Respawning = false;
             }
         }
     }
