@@ -30,13 +30,13 @@ public class PowerManager : MonoBehaviour
 
     public void CyclePower()
     {
-        activePowerRing++;
-        if(activePowerRing >= PowerRings.Count)
+        int temp = activePowerRing + 1;
+        if(temp >= PowerRings.Count)
         {
-            activePowerRing = 0;
+            temp = 0;
         }
 
-        PowerRingActive = activePowerRing;
+        PowerRingActive = temp;
     }
 
     private void UpdatePowerRing(int value)
