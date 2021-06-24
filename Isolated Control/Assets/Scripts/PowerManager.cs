@@ -56,6 +56,7 @@ public class PowerManager : MonoBehaviour
         
         for(int i = 0; i < ring.DetectionsInCircut.Count; i++)
         {
+            if (ring.DetectionsInCircut[i] != null)
             ring.DetectionsInCircut[i].OnPowerActivate.Invoke();
         }
     }
@@ -66,6 +67,7 @@ public class PowerManager : MonoBehaviour
 
         for (int i = 0; i < ring.DetectionsInCircut.Count; i++)
         {
+            if (ring.DetectionsInCircut[i] != null)
             ring.DetectionsInCircut[i].OnPowerDeativate.Invoke();
         }
     }
