@@ -9858,8 +9858,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayPoints:
-  - {x: -8.67, y: -1, z: 26.880001}
-  - {x: -8.67, y: 0, z: 26.880001}
+  - {x: 11.059535, y: 0.89709044, z: 37.98177}
+  - {x: 11.05954, y: 1.9, z: 37.98177}
   Body: {fileID: 1473968915649580411}
   StopWhenPathComplete: 1
   DurationOfMove: 2
@@ -9933,8 +9933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayPoints:
-  - {x: -12.042999, y: -1, z: 35.86}
-  - {x: -12.042999, y: 4.5, z: 35.86}
+  - {x: 12.628422, y: 0.89709044, z: 47.44518}
+  - {x: 12.62842, y: 6.4, z: 47.44518}
   Body: {fileID: 1473968915881920004}
   StopWhenPathComplete: 1
   DurationOfMove: 2
@@ -10099,8 +10099,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayPoints:
-  - {x: -14.25, y: -1, z: 34.02}
-  - {x: -14.25, y: 5.5, z: 34.02}
+  - {x: 9.797104, y: 0.89709044, z: 46.95519}
+  - {x: 9.797104, y: 7.4, z: 46.95519}
   Body: {fileID: 1473968915148250985}
   StopWhenPathComplete: 1
   DurationOfMove: 2
@@ -10354,12 +10354,24 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
+        m_TargetAssemblyTypeName: PuzzlesCompleteDetection, Assembly-CSharp
+        m_MethodName: AddComplete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 179911241}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -10592,8 +10604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayPoints:
-  - {x: -8.719999, y: -1, z: 31.240002}
-  - {x: -8.719999, y: 3, z: 31.240002}
+  - {x: 13.196232, y: 0.89709044, z: 41.782642}
+  - {x: 13.19623, y: 4.9, z: 41.78264}
   Body: {fileID: 1473968915372071004}
   StopWhenPathComplete: 1
   DurationOfMove: 2
@@ -10954,8 +10966,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayPoints:
-  - {x: -17.56, y: -1, z: 34.1}
-  - {x: -17.56, y: 7.21, z: 34.1}
+  - {x: 6.9705586, y: 0.89709044, z: 48.67947}
+  - {x: 6.970559, y: 9.11, z: 48.67947}
   Body: {fileID: 1473968915959658578}
   StopWhenPathComplete: 1
   DurationOfMove: 2
@@ -11040,8 +11052,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayPoints:
-  - {x: -8.719999, y: -1, z: 28.466}
-  - {x: -8.719999, y: 1.5, z: 28.466}
+  - {x: 11.809233, y: 0.89709044, z: 39.380287}
+  - {x: 11.80923, y: 3.4, z: 39.38029}
   Body: {fileID: 1473968914437684616}
   StopWhenPathComplete: 1
   DurationOfMove: 2
@@ -11390,8 +11402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayPoints:
-  - {x: -8.719999, y: -1, z: 35.86}
-  - {x: -8.719999, y: 3, z: 35.86}
+  - {x: 15.5062275, y: 0.89709044, z: 45.78368}
+  - {x: 15.50623, y: 4.9, z: 45.78368}
   Body: {fileID: 1473968915849452866}
   StopWhenPathComplete: 1
   DurationOfMove: 2
@@ -11478,8 +11490,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayPoints:
-  - {x: -10.26, y: -1, z: 23.900002}
-  - {x: -10.26, y: 0.17, z: 23.900002}
+  - {x: 8.192556, y: 0.89709044, z: 36.19601}
+  - {x: 8.192556, y: 2.3970904, z: 36.19601}
   Body: {fileID: 1473968915471702586}
   StopWhenPathComplete: 1
   DurationOfMove: 2
