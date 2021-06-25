@@ -1,4 +1,5 @@
 ﻿using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,10 +19,16 @@ public class FPS_Player_Movement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    public AudioSource  LeftFootstep;
+    public AudioSource RightFootstep;
+    public List<AudioClip> FootstepSounds;
+
     Vector3 velocity;
     bool isGrounded;
 
     public float jumpGrace = 0f;
+    private float footstepTimer = 0;
+    private int footstepFoot = 0;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -60,6 +67,31 @@ public class FPS_Player_Movement : MonoBehaviour
         velocity.y += gravity * Time.fixedDeltaTime;
 
         controller.Move(velocity * Time.fixedDeltaTime);
+
+        if(isGrounded && move.magnitude >= 0.3f)
+        {
+            Footstep();
+        }
+    }
+
+    private void Footstep()
+    {
+        footstepTimer += Time.deltaTime;
+
+        if(footstepTimer >= 0.75f)
+        {
+            if(footstepFoot % 2 == 0)
+            {
+                if (LeftFootstep  != null) LeftFootstep.PlayOneShot(FootstepSounds[UnityEngine.Random.Range(0,FootstepSounds.Count)]);
+            }
+            else
+            {
+                if (RightFootstep != null) LeftFootstep.PlayOneShot(FootstepSounds[UnityEngine.Random.Range(0, FootstepSounds.Count)]);
+            }
+
+            footstepFoot++;
+            footstepTimer = 0;
+        }
     }
 
     private void Update()
