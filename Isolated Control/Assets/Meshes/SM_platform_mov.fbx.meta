@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: M_Base
     second: {fileID: 2100000, guid: 8a4a232e3e5d9724eacd2a27b20407cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_light
+    second: {fileID: 2100000, guid: 2152ef1805cb32345a478f84f6fc847f, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
