@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6560916369125272937}
   - component: {fileID: 983982288965832179}
   - component: {fileID: 7458870239708887394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MovingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,6 +266,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 590e9845763c19646b0471bb345e95e0, type: 3}
       propertyPath: m_Name
       value: SM_platform_mov
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 590e9845763c19646b0471bb345e95e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 590e9845763c19646b0471bb345e95e0, type: 3}
