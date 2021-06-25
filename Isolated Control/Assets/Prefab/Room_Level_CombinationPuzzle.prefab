@@ -10353,6 +10353,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   InteractEvent: {fileID: 0}
 --- !u!65 &1473968914580785765
 BoxCollider:
@@ -11799,7 +11811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayPoints:
-  - {x: -0.45503736, y: 1.3870001, z: 23.024622}
+  - {x: 16.904398, y: 3.2840905, z: 30.155437}
   - {x: -0.4550374, y: 3.5804827, z: 23.030981}
   Body: {fileID: 1274877684}
   StopWhenPathComplete: 1
