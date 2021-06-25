@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3d5bdf3381558374cac948c959605ad3
+guid: 9a9c52dd3aca66349a29eeb300f91088
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
@@ -7,7 +7,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_Base
+      name: isolated_directive_texture_1
     second: {fileID: 2100000, guid: 8a4a232e3e5d9724eacd2a27b20407cd, type: 2}
   materials:
     materialImportMode: 1
